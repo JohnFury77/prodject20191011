@@ -8,8 +8,15 @@ namespace project20191011
 {
     class Program
     {
+
+
+        static double Negyzetgyok(double szam)
+        {
+            return szam;
+        }
         static void Main(string[] args)
         {
+            Console.ReadKey();
         }
     }
 }
