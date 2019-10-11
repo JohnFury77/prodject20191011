@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace project20191011
 {
@@ -11,10 +11,21 @@ namespace project20191011
     {
         static void Main(string[] args)
         {
-            var sr = new StreamWriter("kimenet.txt");
-            sr.WriteLine("sor1");
-            sr.WriteLine("sor2");
-            sr.WriteLine("sor3");
+            Console.WriteLine("Kérek 10 számot.");
+            int[] szam = new int[10];
+            for (int i = 0; i < 10; i++)
+            {
+                szam[i] = int.Parse(Console.ReadLine());
+            }
+            string fajlnev;
+            Console.WriteLine("Kérem a fájlnevet.");
+            fajlnev = Console.ReadLine();
+            string asd = "";
+            for (int j = 0; j < 10; j++)
+            {
+
+            }
+             File.WriteAllText(fajlnev + ".txt",asd);
         }
     }
 }
