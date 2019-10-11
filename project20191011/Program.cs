@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,15 +9,12 @@ namespace project20191011
 {
     class Program
     {
-
-
-        static double Negyzetgyok(double szam)
-        {
-            return szam;
-        }
         static void Main(string[] args)
         {
-            Console.ReadKey();
+            var sr = new StreamWriter("kimenet.txt");
+            sr.WriteLine("sor1");
+            sr.WriteLine("sor2");
+            sr.WriteLine("sor3");
         }
     }
 }
